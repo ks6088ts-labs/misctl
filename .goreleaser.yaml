@@ -16,21 +16,21 @@ builds:
       - darwin
     goarch:
       - amd64
-      - '386'
+      - "386"
       - arm
       - arm64
     ignore:
       - goos: darwin
-        goarch: '386'
+        goarch: "386"
     flags:
       - -trimpath
     ldflags:
-      - '-s -w -X github.com/ks6088ts/template-go/internal.Version={{.Version}} -X github.com/ks6088ts/template-go/internal.Revision={{.Commit}}'
-    binary: '{{ .ProjectName }}_v{{ .Version }}'
+      - "-s -w -X github.com/ks6088ts-labs/misctl/internal.Version={{.Version}} -X github.com/ks6088ts-labs/misctl/internal.Revision={{.Commit}}"
+    binary: "{{ .ProjectName }}_v{{ .Version }}"
 
 archives:
   - format: tar.gz
-    name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
     # use zip for windows archives
     format_overrides:
       - goos: windows

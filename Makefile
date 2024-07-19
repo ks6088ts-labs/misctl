@@ -7,8 +7,8 @@ GOOS ?= $(shell go env GOOS)
 GOARCH ?= $(shell go env GOARCH)
 GOBUILD ?= GOOS=$(GOOS) GOARCH=$(GOARCH) CGO_ENABLED=0 go build
 LDFLAGS ?= '-s -w \
-	-X "github.com/ks6088ts/template-go/internal.Revision=$(GIT_REVISION)" \
-	-X "github.com/ks6088ts/template-go/internal.Version=$(GIT_TAG)" \
+	-X "github.com/ks6088ts-labs/misctl/internal.Revision=$(GIT_REVISION)" \
+	-X "github.com/ks6088ts-labs/misctl/internal.Version=$(GIT_TAG)" \
 '
 
 # Docker
