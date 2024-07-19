@@ -60,3 +60,13 @@ To publish the docker image to Docker Hub, you need to set the following secrets
 gh secret set DOCKERHUB_USERNAME --body $DOCKERHUB_USERNAME
 gh secret set DOCKERHUB_TOKEN --body $DOCKERHUB_TOKEN
 ```
+
+## References
+
+### Common
+
+- [cobra-cli](https://github.com/spf13/cobra-cli)
+
+### IoT
+
+- [Azure-Samples/MqttApplicationSamples/scenarios/getting_started/go/getting_started.go](https://github.com/Azure-Samples/MqttApplicationSamples/blob/main/scenarios/getting_started/go/getting_started.go)
