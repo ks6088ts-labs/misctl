@@ -37,5 +37,5 @@ jobs:
             GIT_REVISION=${{ github.sha }}
             GIT_TAG=${{steps.set_version.outputs.no-dash}}
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/template-go:${{steps.set_version.outputs.no-dash}}
-            ${{ secrets.DOCKERHUB_USERNAME }}/template-go:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/misctl:${{steps.set_version.outputs.no-dash}}
+            ${{ secrets.DOCKERHUB_USERNAME }}/misctl:latest

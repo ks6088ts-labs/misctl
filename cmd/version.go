@@ -19,10 +19,26 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package main
+package cmd
 
-import "github.com/ks6088ts-labs/misctl/cmd"
+import (
+	"fmt"
 
-func main() {
-	cmd.Execute()
+	"github.com/ks6088ts-labs/misctl/internal"
+
+	"github.com/spf13/cobra"
+)
+
+// versionCmd represents the version command
+var versionCmd = &cobra.Command{
+	Use:   "version",
+	Short: "Print the version number of misctl",
+	Long:  `Print the version number of misctl`,
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Printf("Hello, world.\nversion=%s, revision=%s\n", internal.Version, internal.Revision)
+	},
+}
+
+func init() {
+	rootCmd.AddCommand(versionCmd)
 }

@@ -42,8 +42,8 @@ What kind of change does this Pull Request introduce?
 - Get the code
 
 ```
-git clone git@github.com:ks6088ts/template-go.git
-cd template-go
+git clone git@github.com:ks6088ts-labs/misctl.git
+cd misctl
 ```
 
 - Test the code

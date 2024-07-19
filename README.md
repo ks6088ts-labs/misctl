@@ -1,12 +1,12 @@
-[![test](https://github.com/ks6088ts/template-go/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/ks6088ts/template-go/actions/workflows/test.yaml?query=branch%3Amain)
-[![release](https://github.com/ks6088ts/template-go/actions/workflows/release.yaml/badge.svg)](https://github.com/ks6088ts/template-go/actions/workflows/release.yaml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ks6088ts/template-go)](https://goreportcard.com/report/github.com/ks6088ts/template-go)
-[![Go Reference](https://pkg.go.dev/badge/github.com/ks6088ts/template-go.svg)](https://pkg.go.dev/github.com/ks6088ts/template-go)
+[![test](https://github.com/ks6088ts-labs/misctl/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/ks6088ts-labs/misctl/actions/workflows/test.yaml?query=branch%3Amain)
+[![release](https://github.com/ks6088ts-labs/misctl/actions/workflows/release.yaml/badge.svg)](https://github.com/ks6088ts-labs/misctl/actions/workflows/release.yaml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ks6088ts-labs/misctl)](https://goreportcard.com/report/github.com/ks6088ts-labs/misctl)
+[![Go Reference](https://pkg.go.dev/badge/github.com/ks6088ts-labs/misctl.svg)](https://pkg.go.dev/github.com/ks6088ts-labs/misctl)
 
-[![docker](https://github.com/ks6088ts/template-go/actions/workflows/docker.yaml/badge.svg?branch=main)](https://github.com/ks6088ts/template-go/actions/workflows/docker.yaml?query=branch%3Amain)
-[![docker-release](https://github.com/ks6088ts/template-go/actions/workflows/docker-release.yaml/badge.svg)](https://github.com/ks6088ts/template-go/actions/workflows/docker-release.yaml)
+[![docker](https://github.com/ks6088ts-labs/misctl/actions/workflows/docker.yaml/badge.svg?branch=main)](https://github.com/ks6088ts-labs/misctl/actions/workflows/docker.yaml?query=branch%3Amain)
+[![docker-release](https://github.com/ks6088ts-labs/misctl/actions/workflows/docker-release.yaml/badge.svg)](https://github.com/ks6088ts-labs/misctl/actions/workflows/docker-release.yaml)
 
-# template-go
+# misctl
 
 A GitHub template repository for Go
 
