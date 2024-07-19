@@ -55,7 +55,7 @@ test: ## run tests
 .PHONY: build
 build: ## build applications
 	mkdir -p $(OUTPUT_DIR)
-	$(GOBUILD) -ldflags=$(LDFLAGS) -o $(OUTPUT) .
+	$(GOBUILD) -ldflags=$(LDFLAGS) -trimpath -o $(OUTPUT) .
 
 .PHONY: ci-test
 ci-test: install-deps-dev format-check lint test build ## run CI test
