@@ -13,7 +13,7 @@ LDFLAGS ?= '-s -w \
 
 # Docker
 DOCKER_REPO_NAME ?= ks6088ts
-DOCKER_IMAGE_NAME ?= template-go
+DOCKER_IMAGE_NAME ?= misctl
 DOCKER_COMMAND ?= /app
 
 # Tools
@@ -23,7 +23,7 @@ TRIVY_VERSION ?= 0.49.1
 
 # Misc
 OUTPUT_DIR ?= dist
-OUTPUT ?= $(OUTPUT_DIR)/template-go
+OUTPUT ?= $(OUTPUT_DIR)/misctl
 
 .PHONY: help
 help:
