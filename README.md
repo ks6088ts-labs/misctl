@@ -70,3 +70,7 @@ gh secret set DOCKERHUB_TOKEN --body $DOCKERHUB_TOKEN
 ### IoT
 
 - [Azure-Samples/MqttApplicationSamples/scenarios/getting_started/go/getting_started.go](https://github.com/Azure-Samples/MqttApplicationSamples/blob/main/scenarios/getting_started/go/getting_started.go)
+
+### HTTP
+
+- [OpenTelemetry > Go > Get Started](https://opentelemetry.io/docs/languages/go/getting-started/)

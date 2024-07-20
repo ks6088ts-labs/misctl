@@ -25,6 +25,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/ks6088ts-labs/misctl/cmd/http"
 	"github.com/ks6088ts-labs/misctl/cmd/iot"
 
 	"github.com/spf13/cobra"
@@ -100,4 +101,5 @@ func initConfig() {
 // addSubCommands registers sub commands
 func addSubCommands() {
 	rootCmd.AddCommand(iot.GetCommand())
+	rootCmd.AddCommand(http.GetCommand())
 }
