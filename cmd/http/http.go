@@ -22,23 +22,10 @@ THE SOFTWARE.
 package http
 
 import (
-	"io"
 	"log"
-	"math/rand"
-	"net/http"
-	"strconv"
 
 	"github.com/spf13/cobra"
 )
-
-func rolldice(w http.ResponseWriter, r *http.Request) {
-	roll := 1 + rand.Intn(6)
-
-	resp := strconv.Itoa(roll) + "\n"
-	if _, err := io.WriteString(w, resp); err != nil {
-		log.Printf("Write failed: %v\n", err)
-	}
-}
 
 // httpCmd represents the http command
 var httpCmd = &cobra.Command{
@@ -51,9 +38,9 @@ var httpCmd = &cobra.Command{
 			log.Printf("unable to parse `port`: %v", port)
 		}
 
-		http.HandleFunc("/rolldice", rolldice)
-
-		log.Fatal(http.ListenAndServe(":"+strconv.Itoa(port), nil))
+		if err := run(port); err != nil {
+			log.Fatalln(err)
+		}
 	},
 }
 
