@@ -19,7 +19,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-package cmd
+package http
 
 import (
 	"io"
@@ -58,7 +58,9 @@ var httpCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(httpCmd)
-
 	httpCmd.Flags().IntP("port", "p", 8080, "Port number")
+}
+
+func GetCommand() *cobra.Command {
+	return httpCmd
 }
